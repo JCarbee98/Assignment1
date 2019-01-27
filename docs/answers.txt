@@ -1,1 +1,65 @@
- 
+A.  
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': JCarbee98
+Password for 'https://JCarbee98@github.com':
+Counting objects: 10, done.
+Delta compression using up to 56 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 759 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/JCarbee98/Assignment1.git
+   3d373c9..46539d7  master -> master
+
+
+B.
+5 total commits. I used the command "git log" and there were 3 by me and 2 by Javier Escobar-Avila
+
+
+C.  The file .gitignore was last modified on  Thu Jan 10 16:45:38 2019. I used the command "git log .gitignore" and it displayed the date listed above. 
+
+D. Branches are used to allow independent lines of development. This allows several developers to work on the same code, but not directly interfering with each other's work. Git has an excellent system in place that allows these branches to be merged together as well. Branches are also highly useful for implementing a version control system where there is a main branch with stable, working code and a testing branch that is used for developing unstable code that might eventually make its way over to the main branch.
+
+E.
+git status is used to show the working tree status and the state of the directory while git log is used to show information on previous commits to the current project. git status can show
+you what branch you are currently on as well as files that need to be committed because of changes made. git log will only show previous commits.
+
+F.
+If you use the command git log Weapons.h it will show all of the commits involving Weapons.h
+
+G.
+git log --grep="file" would show all of the commits whose messages contain the word file.
+
+H.
+1. Inheritance allows you to derive classes from other classes. There is a subclass and a parent class and the subclass will inherit all of the functions and data contained within the
+parent class if set up properly.
+2. Polymorphism allows a function to accept different types instead of just one. Polymorphism can be divided into compile time and runtime polymorphism. Compile time polymorphism is where different functions have the same name, but have different parameters while runtime polymorphism is when a derived class has the same function as a parents class and overrides it
+ by making changes to the child class function.
+3. Encapsulation is used to hide data from outside of a class. There are certain keywords that are used within C++ that will assist with this concept such as public, private, and
+protected. If data is put under the public keyword than it is able to be accessed by all other functions within the program. Private doesn't allow this to happen. Protected is almost 
+the same as private with the exception that the data can be accessed from child classes.
+
+I.
+The Integration Manager Workflow specifically states that the developers have a private and a public directory that they work in while the Dictator and Lieutenants Workflow they only say
+the developers only have 1. With the Integration Manager Workflow there is also only one person who reviews the code that is pushed from the developer and fixes out merge conflicts. The Dictator and Lieutenants Workflow has multiple people that developers can push to and from there it is pushed again to a higher up person to sort out conflicts. From there it
+ would finally reach the "blessed" repository.
+
+J.
+In a team of 100 people, Imagine a worse case scenario where a developer pulls code from the shared repository and has 30 conflicts that need to be resolved before he can push his code.
+This would happen in a Centralized Workflow, but lets take this scenario and instead change it to the Dictators and Lieutenants Workflow. In this scenario the developers don't have to
+fix these merge issues, but instead it would be the lieutenants who fix these issues. Having multiple people to fix these issues solves the issue where it is not a single developer
+that has to fix issues and instead it can be split up. With a larger team working on a project there will be a lot more merge conflicts. The centralized workflow works well with a small
+team, but not with 100 people.
