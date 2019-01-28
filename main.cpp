@@ -1,9 +1,9 @@
 
 /* 
  * File:   main.cpp
- * Author: Javier <jrescobara@gmail.com> 
+ * Author: Joshua Carbee   jbc15e
  *
- * Created on September 25, 2017, 3:19 PM
+ * Created on January 28th, 2019   6:21 PM
  */
 
 #include <cstdlib>
@@ -38,6 +38,20 @@ int main(int argc, char** argv) {
     weapon = WeaponFactory::getInstance()->getWeapon("spear");
     simulateWeapon(weapon, armor);
     delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("hammer");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("randomSword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("dart");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+
 
     return 0;
 }

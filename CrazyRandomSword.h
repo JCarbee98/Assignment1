@@ -7,6 +7,7 @@
 
 #include <string>
 #include "Weapon.h"
+#include <stdlib.h>
 
 #ifndef CRAZYRANDOMSWORD_H
 #define CRAZYRANDOMSWORD_H
@@ -17,7 +18,7 @@
 class CrazyRandomSword : public Weapon {
 public:
 
-    CrazyRandomSword() : Weapon("Crazy random sword", (rand() % 93 + 7) //Calls the constructor with string Crazy random sword and a random number between 7 and 100
+    CrazyRandomSword() : Weapon("Crazy random sword", (rand() % 93 + 7)) //Calls the constructor with string Crazy random sword and a random number between 7 and 100
     {
     }
 
