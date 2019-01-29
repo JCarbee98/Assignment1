@@ -7,9 +7,11 @@
 #include "CrazyRandomSword.h"
 #include <stdlib.h>
 #include <math.h>
+#include <ctime>
 double CrazyRandomSword::hit(double armor){
-    double temp = rand() %(int)floor(((1/3)*hitPoints - 2))  + 2;
-    double damage = armor - temp;
+    srand(time(NULL));
+    double temp = ((1/3) * hitPoints) - 2;
+    double damage = rand() % (int)temp + 2;
     if(damage < 0){
         return 0;
     }

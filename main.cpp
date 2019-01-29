@@ -10,6 +10,8 @@
 #include <iostream>
 #include "Weapon.h"
 #include "WeaponFactory.h"
+#include <ctime>
+
 
 using namespace std;
 
@@ -30,6 +32,8 @@ void simulateWeapon(Weapon * weapon, double armor) {
 int main(int argc, char** argv) {
 
     double armor = 29;
+ 
+    srand(time(NULL));   
 
     Weapon *weapon = WeaponFactory::getInstance()->getWeapon("sword");
     simulateWeapon(weapon, armor);
