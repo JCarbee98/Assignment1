@@ -63,3 +63,10 @@ This would happen in a Centralized Workflow, but lets take this scenario and ins
 fix these merge issues, but instead it would be the lieutenants who fix these issues. Having multiple people to fix these issues solves the issue where it is not a single developer
 that has to fix issues and instead it can be split up. With a larger team working on a project there will be a lot more merge conflicts. The centralized workflow works well with a small
 team, but not with 100 people.
+
+
+OOP principles questions
+1. The RoleGame prototype is using polymorphism as shown by the virtual functions that are in all of the weapon files. Virtual functions are used with late binding and tells the compiler that static linkage is not needed. The base class Weapon from which the different weapons are derived from has a class called hit for which the derived classes have a different implementation.
+This prototype also uses encapsulation as shown by the use of the keywords public, protected, and private. In Weapon.h there is the double hitPoints which is then passed on to the child classes. Other data such as the name is also in this category.
+All of the functions are mostly under public so that they can be accessed from other functions in the prototype.
+
