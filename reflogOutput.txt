@@ -1,0 +1,12 @@
+8c32522 refs/heads/development@{0}: commit: removed a.out
+25f9f3f refs/heads/development@{1}: commit: made changes within CrazyRandomSword and main.cpp to get the random number gen working right
+2fe64ba refs/heads/development@{2}: commit: added OOP principles answers in txt file
+79b5690 refs/heads/development@{3}: commit: fixed various bugs and added changes to main.cpp
+95ff3d8 refs/heads/development@{4}: commit: Created Dart.h and Dart.cpp
+7645b55 refs/heads/development@{5}: commit: Created CrazyRandomSword.cpp
+dd1f982 refs/heads/development@{6}: commit: Created CrazyRandomSword.h
+6a6db4b refs/heads/development@{7}: commit: Created SimpleHammer.cpp
+5a27814 refs/heads/development@{8}: commit: Created SimpleHammer.h
+fd61477 refs/heads/development@{9}: commit: Created CommonBow.cpp
+6e9a763 refs/heads/development@{10}: commit: Created CommonBow.h
+8f42ba0 refs/heads/development@{11}: branch: Created from HEAD
